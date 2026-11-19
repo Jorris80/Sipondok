@@ -212,7 +212,7 @@ function can(p) {
   var ps = S.boot.perms || [], pre = p.split('.')[0], act = p.split('.')[1], sens = ['health', 'counseling', 'payroll', 'pii'].indexOf(pre) >= 0;
   return ps.some(function (x) { return x === '*' || x === p || x === pre + '.*' || (!sens && x === '*.' + act); });
 }
-function apiUrl() { return LS.get('api_url', window.__API_URL || ''); }
+function apiUrl() { return LS.get('api_url', window.__API_URL || 'https://script.google.com/macros/s/AKfycbyTJYzBUY-FpUOq8CghTL2AE71mV4qfnHUcW_TaOkF6mLdYYPYmRp1Cp48q0CM3ZZ0/exec'); }
 
 /* ---------------- transport ---------------- */
 var progressN = 0;
